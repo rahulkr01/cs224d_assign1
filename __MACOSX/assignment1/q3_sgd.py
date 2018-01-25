@@ -68,16 +68,15 @@ def sgd(f, x0, step, iterations, postprocessing = None, useSaved = False, PRINT_
         postprocessing = lambda x: x
     
     expcost = None
-    h=1e-4
-    cost=0
+    
     for iter in xrange(start_iter + 1, iterations + 1):
         ### Don't forget to apply the postprocessing after every iteration!
         ### You might want to print the progress every few iterations.
 
-        # cost = None
+        cost = None
         ### YOUR CODE HERE
-        f1,g=f(x)
-        x-=step*g       
+
+        
         # raise NotImplementedError
         ### END YOUR CODE
         
